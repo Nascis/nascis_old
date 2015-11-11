@@ -10,45 +10,46 @@ body{
 	/******
 	* z-indexes
 	******/
-	#navComputer{
-		z-index: 1000 !important;
-		&.fullscreen{z-index: 1000 !important;}
-		&>*{z-index: 1002 !important;}
-		&::before{z-index: 1001 !important;}
-		.dropdown{z-index: 1250 !important;}
-	}
-	.overlayed{z-index: 1500 !important;
-		&::after{z-index: 1499 !important;}
-		&>*{	z-index: 1501 !important;}
-	}
-	main{
-		#reportBug{z-index:1200 ;}
-		.fixed{z-index: 500 !important;}
-		.dimmer{z-index: 550 !important;}
-		.favorite{z-index: 600 !important;}
-		#browseNav{	z-index: 500 !important;}
-		#alertMessages{z-index: 1750 !important;}
-	}
 
-	footer{z-index: 500 !important;}
 
 
 	/******
 	* main rules
 	******/
 	#header{
+		width: 150px;
+		position: fixed;
+		right: 0;
+		z-index: 100;
 	}
 
 	main{
+		z-index: 50;
 		.regTransition;
-		padding-bottom: 214px;
-		padding-top: 4.5rem;
-		width: 100%;
-		min-height: 100vh;
+		padding-bottom: 200px;
 		position: relative;
 
-		section{position: relative;}
-
+		section{
+			min-height: 50vh;
+			position: relative;
+			background-size: 100%;
+		}
+		#home{
+			background-image: url(/img/backgrounds/background_01.jpg);
+			height: 100vh;
+		}
+		#about{
+			background-image: url(/img/backgrounds/background_02.jpg);
+		}
+		#services{
+			background-image: url(/img/backgrounds/background_03.jpg);
+		}
+		#portfolio{
+			background-image: url(/img/backgrounds/background_04.jpg);
+		}
+		#contact{
+			background-image: url(/img/backgrounds/background_05.jpg);
+		}
 
 	}
 

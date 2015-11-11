@@ -1,9 +1,9 @@
-// Router.configure({
-//     layoutTemplate: 'layout',
-//     notFoundTemplate: 'notFound',
-//     loadingTemplate: 'loading'
-// });
-//
+Router.configure({
+    layoutTemplate: 'layout',
+    notFoundTemplate: 'notFound',
+    loadingTemplate: 'loading'
+});
+
 // Router.onStop(function(){ Session.set("previousLocationPath", this.url); });
 
 Router.route('/', {
