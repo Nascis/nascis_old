@@ -11,7 +11,16 @@ body{
 	* z-indexes
 	******/
 
+	#header{
+		z-index: 100;
+	}
 
+	main{
+		z-index: 50;
+	}
+	footer{
+		z-index: 0;
+	}
 
 	/******
 	* main rules
@@ -26,8 +35,9 @@ body{
 	main{
 		z-index: 50;
 		.regTransition;
-		padding-bottom: 200px;
+		margin-bottom: 200px;
 		position: relative;
+		box-shadow: 0px 0px 25px 10px rgba(10,10,10,0.8);
 
 		section{
 			min-height: 50vh;
@@ -35,28 +45,30 @@ body{
 			background-size: 100%;
 		}
 		#home{
-			background-image: url(/img/backgrounds/background_01.jpg);
+			background: url(/img/backgrounds/background_01.jpg) fixed;
 			height: 100vh;
 		}
 		#about{
-			background-image: url(/img/backgrounds/background_02.jpg);
+			background: url(/img/backgrounds/background_02.jpg);
 		}
 		#services{
-			background-image: url(/img/backgrounds/background_03.jpg);
+			background: url(/img/backgrounds/background_03.jpg);
 		}
 		#portfolio{
-			background-image: url(/img/backgrounds/background_04.jpg);
+			background: url(/img/backgrounds/background_01.jpg) fixed;
 		}
 		#contact{
-			background-image: url(/img/backgrounds/background_05.jpg);
+			background: url(/img/backgrounds/background_05.jpg);
 		}
 
 	}
 
 	footer{
+		background: url(/img/backgrounds/background_01.jpg) fixed;
+		margin-bottom: 0 !important;
+		position: fixed;
+		bottom: 0; left: 0; right: 0;
 		height: 200px;
-		margin-top: -200px !important;
-		background: darken(@primaryColor, 10%);
 	}
 
 	/******
