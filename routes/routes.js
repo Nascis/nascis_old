@@ -8,7 +8,7 @@
 
 Router.route('/', {
     name: "home",
-    template: "home",
+    template: "singlePage",
     waitOn: function() { },
     data: function() { },
     onRun: function() { this.next(); },
