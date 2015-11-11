@@ -1,4 +1,3 @@
-Template.help.onCreated(function() { document.title = "Help | The CAD Collection"; });
 Template.about.onCreated(function(){ document.title = "About | The CAD Collection"; });
 Template.legalPages.onCreated(function() { document.title = "Legal pages | The CAD Collection"; });
 Template.legalPages.onRendered(function() { $('.menu .item').tab(); });
