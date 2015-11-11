@@ -33,32 +33,69 @@ body{
 	}
 
 	main{
+
 		z-index: 50;
 		.regTransition;
-		margin-bottom: 200px;
+		margin-bottom: 300px;
 		position: relative;
-		box-shadow: 0px 0px 25px 10px rgba(10,10,10,0.8);
+		.thin, .bold{
+			font-size: 5rem;
+		}
+		&::after{
+			content:"";
+			display:block;
+			position: fixed;
+			border-left: solid 1px white;
+			left: 25vw; top: 0; height: 100vh;
+			transform: skewX(15deg);
+			transform-origin: top left;
+		}
 
 		section{
-			min-height: 50vh;
 			position: relative;
 			background-size: 100%;
 		}
+
+		#about, #about::after, #about::before, #services, #services::after, #services::before{background: @grey;}
+		#contact, #contact::after, #contact::before{background: @blue;}
+
 		#home{
 			background: url(/img/backgrounds/background_01.jpg) fixed;
 			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			h1{
+				position: relative;
+				top: -3rem;
+				left: 3rem;
+				.thin, .bold{
+					font-size: 5rem;
+				}
+				&::after{
+					content:"";
+					display:block;
+					position: absolute;
+					border-left: solid 10px white;
+					left: -5rem; top: -0.5rem; height: 5rem;
+					transform: skewX(15deg);
+					transform-origin: top left;
+				}
+			}
 		}
 		#about{
-			background: url(/img/backgrounds/background_02.jpg);
+			min-height: 25vh;
 		}
 		#services{
-			background: url(/img/backgrounds/background_03.jpg);
+			min-height: 25vh;
 		}
 		#portfolio{
 			background: url(/img/backgrounds/background_01.jpg) fixed;
+			min-height: 75vh;
+			padding: 15vh;
 		}
 		#contact{
-			background: url(/img/backgrounds/background_05.jpg);
+			min-height: 25vh;
 		}
 
 	}
@@ -66,9 +103,10 @@ body{
 	footer{
 		background: url(/img/backgrounds/background_01.jpg) fixed;
 		margin-bottom: 0 !important;
+		padding-top: 100px !important;
 		position: fixed;
 		bottom: 0; left: 0; right: 0;
-		height: 200px;
+		height: 300px;
 	}
 
 	/******

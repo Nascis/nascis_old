@@ -1,8 +1,3 @@
-Template.about.onCreated(function(){ document.title = "About | The CAD Collection"; });
-Template.legalPages.onCreated(function() { document.title = "Legal pages | The CAD Collection"; });
-Template.legalPages.onRendered(function() { $('.menu .item').tab(); });
-Template.notFound.onCreated(function() { document.title = "Not Fount | The CAD Collection"; });
-Template.accessDenied.onCreated(function() { document.title = "Access Denied | The CAD Collection"; });
 Template.contact.events({
 	"submit .contact": function(event, template) {
 		event.preventDefault();
@@ -44,9 +39,3 @@ Template.contact.events({
 		return false;
 	}
 });
-
-Template.contact.onRendered(function() { $('.dropdown').dropdown(); });
-
-Template.about.events({ "click .back": function() { history.back(); }, });
-Template.accessDenied.events({ "click .back": function() { history.back(); } });
-Template.notFound.events({ "click .back": function() { history.back(); } });

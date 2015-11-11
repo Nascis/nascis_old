@@ -70,6 +70,46 @@
 	}
 }
 
+.bias{
+	position: relative;
+	z-index: 2;
+	min-height: 12vw;
+	>div.container{
+		position: relative;
+		z-index: 100;
+	}
+	&.top-left:before, &.top-right:before, &.bottom-left:after, &.bottom-right:after{
+		content:"";
+		display:block;
+		position: absolute;
+		width: 100%;
+		height: 10vw;
+		z-index: 1;
+
+	}
+
+	&.top-left::before{
+		top: -7vw;
+		transform: skewY(3deg);
+		transform-origin: top left;
+	}
+	&.top-right::before{
+		top: -7vw;
+		transform: skewY(-3deg);
+		transform-origin: top right;
+	}
+	&.bottom-right::after{
+		bottom: -7vw;
+		transform: skewY(-3deg);
+		transform-origin: bottom left;
+	}
+	&.bottom-left::after{
+		bottom: -7vw;
+		transform: skewY(3deg);
+		transform-origin: bottom right;
+	}
+}
+
 
 //backgrounds header
 header{
