@@ -1,7 +1,5 @@
 Template.help.onCreated(function() { document.title = "Help | The CAD Collection"; });
 Template.about.onCreated(function(){ document.title = "About | The CAD Collection"; });
-Template.forgotten.onCreated(function() { document.title = "Forgotten | The CAD Collection"; });
-Template.resetPassword.onCreated(function(){ document.title = "Reset password | The CAD Collection"; });
 Template.legalPages.onCreated(function() { document.title = "Legal pages | The CAD Collection"; });
 Template.legalPages.onRendered(function() { $('.menu .item').tab(); });
 Template.notFound.onCreated(function() { document.title = "Not Fount | The CAD Collection"; });
@@ -52,7 +50,5 @@ Template.contact.onRendered(function() { $('.dropdown').dropdown(); });
 Template.help.onRendered(function() { $('.ui.accordion').accordion(); });
 
 Template.about.events({ "click .back": function() { history.back(); }, });
-Template.forgotten.events({ "click .back": function() { history.back(); } });
 Template.accessDenied.events({ "click .back": function() { history.back(); } });
 Template.notFound.events({ "click .back": function() { history.back(); } });
-Template.resetPassword.events({ "click .back": function() { history.back(); } });

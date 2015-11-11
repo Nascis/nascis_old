@@ -1,15 +1,8 @@
-Template.home.helpers({
-	routeTitle() { return "HOME" }
-});
+Template.home.helpers({});
 
-Template.home.events({
-	});
+Template.home.events({});
 
-
-Template.home.onDestroyed(function(){
-	$('#navComputer').removeClass('fullscreen');
-});
-
+Template.home.onDestroyed(function(){});
 
 Template.home.onCreated(function(){
 	document.title = "The CAD Collection";
