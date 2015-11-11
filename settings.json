@@ -1,0 +1,18 @@
+{
+    "public": {
+        "stripe": {
+            "testPublishableKey": "pk_test_D05JjdmxfSVhYOsOZGE6XG1u",
+            "livePublishableKey": "pk_live_xxxxxxxxxxxxxxxxxxxxxxxx"
+        },
+        "analyticsSettings": {
+            "Google Analytics" : {"trackingId": "UA-51188326-3"},
+            "Mixpanel"         : {"token":  "9094378a235e0bb1f5e3b13f48829afb", "people": true},
+        }
+    },
+    "private": {
+        "stripe": {
+            "testSecretKey": "sk_test_3GhdRO9Rd7Qo08jc0VrJPZhh",
+            "liveSecretKey": "sk_live_xxxxxxxxxxxxxxxxxxxxxxxx"
+        }
+    }
+}

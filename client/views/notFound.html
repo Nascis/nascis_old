@@ -1,0 +1,34 @@
+<template name="notFound">
+
+    <section id="notFound" class="ui centered divided small container grid animated fadeIn">
+        <div class="column row">
+
+            <i class="massive map icon"></i>
+            <h2 class="ui center aligned header">
+                <div class="content">
+                    404 Ooops
+                    <div class="sub header">Page not found</div>
+                </div>
+            </h2>
+        </div>
+
+        <div class="center aligned two column row">
+            <div class="column">
+                <h3 class="ui center aligned header">
+                    Search the collection
+                </h3>
+                <div class="ui basic segment">You might be looking for a item in the collection?</div>
+                <a class="ui button fluid" href="{{pathFor 'item.search'}}">Search</a>
+            </div>
+
+            <div class="column">
+                <h3 class="ui center aligned header">
+                    Back to known grounds
+                </h3>
+                <div class="ui  basic segment">Go back to the page you came from and make take another path.</div>
+                <a class="ui button fluid back">Previous page</a>
+            </div>
+        </div>
+
+    </section>
+</template>

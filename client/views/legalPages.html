@@ -1,0 +1,18 @@
+<template name="legalPages">
+    <section id="legalPages" class="ui container">
+        <div class="ui pointing three item menu row">
+            <div class="item active" data-tab="confidentiality">Confidentialité</div>
+            <div class="item" data-tab="cgu">CGU</div>
+            <div class="item" data-tab="legalmentions">Mentions légales</div>
+        </div>
+        <div class="ui tab active" data-tab="confidentiality">
+            {{>confidentiality}}
+        </div>
+        <div class="ui tab" data-tab="cgu">
+            {{>cgu}}
+        </div>
+        <div class="ui tab" data-tab="legalmentions">
+            {{>mentionslegales}}
+        </div>
+    </section>
+</template>

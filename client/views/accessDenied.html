@@ -1,0 +1,33 @@
+<template name="accessDenied">
+    <section id="notFound" class="ui centered divided small container grid animated fadeIn">
+        <div class="column row">
+
+            <i class="massive warning circle icon"></i>
+            <h2 class="ui center aligned header">
+                <div class="content">
+                    403 Access Denied
+                    <div class="sub header">You are not allowed here</div>
+                </div>
+            </h2>
+        </div>
+
+        <div class="center aligned two column row">
+            <div class="column">
+                <h3 class="ui center aligned header">
+                    Try to signin or signup
+                </h3>
+                <div class="ui basic segment">Try to enter theCadCollection and contribute</div>
+                <a class="ui button fluid" href="{{pathFor 'user.login'}}">Login / Subscribe</a>
+            </div>
+
+            <div class="column">
+                <h3 class="ui center aligned header">
+                    Back to known grounds
+                </h3>
+                <div class="ui  basic segment">Go back to the page you came from and make take another path.</div>
+                <a class="ui button fluid back">Previous page</a>
+            </div>
+        </div>
+
+    </section>
+</template>
