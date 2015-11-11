@@ -46,7 +46,6 @@ Template.contact.events({
 });
 
 Template.contact.onRendered(function() { $('.dropdown').dropdown(); });
-Template.help.onRendered(function() { $('.ui.accordion').accordion(); });
 
 Template.about.events({ "click .back": function() { history.back(); }, });
 Template.accessDenied.events({ "click .back": function() { history.back(); } });

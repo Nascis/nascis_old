@@ -1,10 +1,10 @@
-Router.configure({
-    layoutTemplate: 'layout',
-    notFoundTemplate: 'notFound',
-    loadingTemplate: 'loading'
-});
-
-Router.onStop(function(){ Session.set("previousLocationPath", this.url); });
+// Router.configure({
+//     layoutTemplate: 'layout',
+//     notFoundTemplate: 'notFound',
+//     loadingTemplate: 'loading'
+// });
+//
+// Router.onStop(function(){ Session.set("previousLocationPath", this.url); });
 
 Router.route('/', {
     name: "home",
@@ -19,17 +19,17 @@ Router.route('/', {
     action: function () { if (this.ready()) { this.render(); } else { this.render('loading'); } },
     fastRender: true
 });
-
-Router.route('/about_the_nascis', function() {
-    if (this.ready()) this.render('about');
-    else this.render('loading');
-}, {
-    name: "about"
-});
-
-Router.route('/boring_stuffs',function () {
-    if (this.ready()) this.render('legalPages');
-    else this.render('loading');
-}, {
-    name: "legales"
-});
+//
+// Router.route('/about_the_nascis', function() {
+//     if (this.ready()) this.render('about');
+//     else this.render('loading');
+// }, {
+//     name: "about"
+// });
+//
+// Router.route('/boring_stuffs',function () {
+//     if (this.ready()) this.render('legalPages');
+//     else this.render('loading');
+// }, {
+//     name: "legales"
+// });

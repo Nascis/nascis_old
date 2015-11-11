@@ -13,12 +13,12 @@ Template.home.onCreated(function(){
 });
 Template.home.onRendered(function(){
 	$('#navComputer').addClass('fullscreen');
-    var vivus = new Vivus ('vivus', {
-		type: 'async',
-		duration: 50,
-		start: 'autostart',
-		forceRender: false,
-		dashGap: 2,
-	});
-	vivus.reset().play();
+    // var vivus = new Vivus ('vivus', {
+	// 	type: 'async',
+	// 	duration: 50,
+	// 	start: 'autostart',
+	// 	forceRender: false,
+	// 	dashGap: 2,
+	// });
+	// vivus.reset().play();
 });
