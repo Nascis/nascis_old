@@ -1,6 +1,19 @@
 <template name="portfolio">
-
     <section id="portfolio" class="">
-    </section>
+        {{#each projects}}
+        <div class="ui card">
+            <div class="image">
+                <img src="{{imgUrl}}">
+            </div>
+            <div class="content">
 
+                <a class="header">{{name}}</a>
+                <div class="meta">
+                    <span class="date">{{dateRealized}}</span>
+                </div>
+                <div class="description">{{shortDescription}}</div>
+            </div>
+        </div>
+        {{/each}}
+    </section>
 </template>

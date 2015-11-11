@@ -1,1 +1,1 @@
-Project = new Mongo.Collection("project");
+Projects = new Mongo.Collection("projects");
