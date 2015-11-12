@@ -19,17 +19,24 @@ Router.route('/', {
     action: function () { if (this.ready()) { this.render(); } else { this.render('loading'); } },
     fastRender: true
 });
-//
-// Router.route('/about_the_nascis', function() {
-//     if (this.ready()) this.render('about');
-//     else this.render('loading');
-// }, {
-//     name: "about"
-// });
-//
-// Router.route('/boring_stuffs',function () {
-//     if (this.ready()) this.render('legalPages');
-//     else this.render('loading');
-// }, {
-//     name: "legales"
-// });
+
+Router.route('/about_the_nascis', function() {
+    if (this.ready()) this.render('about');
+    else this.render('loading');
+}, {
+    name: "about"
+});
+
+Router.route('/boring_stuffs',function () {
+    if (this.ready()) this.render('cgu');
+    else this.render('loading');
+}, {
+    name: "cgu"
+});
+
+Router.route('/legal_mention',function () {
+    if (this.ready()) this.render('mentionslegales');
+    else this.render('loading');
+}, {
+    name: "mentionslegales"
+});

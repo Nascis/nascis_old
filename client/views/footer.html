@@ -11,9 +11,9 @@
 				<div id="footerBrandingMotto" class="eight wide column middle aligned">
 					<div class="ui link inverted list">
 						<div id="footerBrandingMottoTitle" class="item">
-							<div class="header uppercase">The <span class="uLined">Cad</span> Collection</div>
+							<div class="header uppercase">NAS<span class="uLined">CIS</span></div>
 						</div>
-						<div id="footerBrandingMottoPhrase" class="item uppercase">your go to CAD designs catalog</div>
+						<div id="footerBrandingMottoPhrase" class="item uppercase">your go to web agency</div>
 						<div id="footerBrandingMottoMade" class="item serif">designed and made by <a href="http://www.nascis.fr/" target="_blank" class="uLined">Nascis</a>.</div>
 						<div id="footerBrandingMottoPower" class="item serif">powered by <a href="https://www.meteor.com" target="_blank" class="uLined">meteor</a> and <a href="http://semantic-ui.com/" target="_blank" class="uLined">semantic_ui</a></div>
 					</div>
@@ -25,38 +25,23 @@
 				<div class="column">
 					<div class="ui small link inverted list">
 						<div class="item">
-							<div class="header uppercase thin">Collection</div>
+							<div class="header uppercase thin">The agency</div>
 						</div>
-						<a class="item" href="{{pathFor 'item.search'}}">Search</a>
-						<a class="item" href="{{pathFor 'item.browse'}}">Browse</a>
-						<a class="item" href="{{pathFor 'item.contribute'}}">Contribute</a>
+						<a class="item" href="{{pathFor route='home' hash='home'}}">Home</a>
+						<a class="item" href="{{pathFor route='home' hash='portfolio'}}">Portfolio</a>
+						<a class="item" href="{{pathFor route='home' hash='services'}}">Services</a>
+						<a class="item" href="{{pathFor route='home' hash='contact'}}">Contact</a>
 					</div>
 				</div>
 				<div class="column">
 					<div class="ui small link inverted list">
 						<div class="item">
-							<div class="header uppercase thin">Account</div>
+							<div class="header uppercase thin">Legales Pages</div>
 						</div>
-						{{#if currentUser}}
-						<a class="item" href="{{pathFor 'user.profile' _id=currentUser._id }}">Profile</a>
-						<a class="item" href="{{pathFor 'user.settings'}}">Settings</a>
-						{{#if isInRole 'adm'}}
-						<a class="item" href="{{pathFor 'user.adm'}}">Administration</a>
-						{{/if}}
-						<a class="item" href="{{pathFor 'user.logout'}}">Log out</a>
-						{{else}}
-						<a class="item" href="{{pathFor 'user.login'}}">Login / Subscribe</a>
-						{{/if}}
-					</div>
-				</div>
-				<div class="column">
-					<div class="ui small link inverted list">
-						<div class="item">
-							<div class="header uppercase thin">Meta</div>
-						</div>
-						<a class="item" href="{{pathFor 'about'}}">About</a>
-						<a class="item" href="{{pathFor 'help'}}">Help</a>
-						<a class="item" href="{{pathFor 'legales'}}">Legal pages</a>
+						<a class="item" href="{{pathFor route='mentionslegales' hash='mentionslegales' }}">Mention Legales</a>
+						<a class="item" href="{{pathFor route='cgu' hash='cgu' }}">CGU</a>
+						<a class="item" href="{{pathFor route='confidentiality' hash='confidentiality' }}">Confidentiality</a>
+						<a class="item" href="{{pathFor route='security' hash='security' }}">Security</a>
 					</div>
 				</div>
 			</div>
