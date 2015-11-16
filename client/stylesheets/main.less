@@ -25,13 +25,18 @@ body{
 	/******
 	* main rules
 	******/
+	background: url(/img/backgrounds/background_01.jpg) fixed;
+	background-size: cover !important;
 	#header{
 		position: fixed;
 		left: 0; top: 0;right: 0;
 		z-index: 100;
-		// .inverted.menu{
-		// 	background: rgba(25, 25, 25, 0.15);			
-		// }
+		h1{
+			font-size: 1.2em;
+		}
+		.inverted.menu{
+			background: transparent;			
+		}
 	}
 
 	main{
@@ -49,8 +54,8 @@ body{
 			background-size: cover !important;
 		}
 
-		#about, #about::after, #about::before, #services, #services::after, #services::before{background: @grey;}
-		#contact, #contact::after, #contact::before{background: @blue;}
+		#about, #about::after, #about::before, #services, #services::after, #services::before{background: @primaryColor;}
+		#contact, #contact::after, #contact::before{background: @secondaryColor;}
 
 		#home{
 			background: url(/img/backgrounds/background_01.jpg) fixed;
@@ -82,8 +87,7 @@ body{
 	}
 
 	footer{
-		background: url(/img/backgrounds/background_01.jpg) fixed;
-		background-size: cover !important;
+		background: rgba(0, 0, 0, 0.7);
 		margin-bottom: 0 !important;
 		padding-top: 100px !important;
 		position: fixed;
